@@ -1,0 +1,9 @@
+FROM python:3
+ENV PYTHONUNBUFFERED 1
+RUN mkdir /code
+WORKDIR /code
+ADD django-entrypoint.sh /code/
+ADD /hr_tech_back/requirements.txt /code/
+RUN pip install -r requirements.txt
+ADD /hr_tech_back/. /code/
+RUN chmod +x django-entrypoint.sh
