@@ -13,6 +13,8 @@ services:
             context: .
             dockerfile: DockerfileBack
         command: ["/code/django-entrypoint.sh"]
+        environment:
+            - SECRET_KEY='2*0@lqe83p-8n()egy4)t%04nobpfq#eye!m=l9jh#_u2ix*ai'
         ports:
             - 8000:8000
         depends_on:
