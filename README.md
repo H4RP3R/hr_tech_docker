@@ -6,5 +6,5 @@ sh ./get.sh
 docker-compose up --build
 ```
 
-[морда](http://localhost:8080/)
-[админка джанги](http://localhost:8000/admin)
+[морда](http://localhost:8080/)  
+[админка джанги](http://localhost:8000/admin)  
